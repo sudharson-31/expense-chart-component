@@ -1,0 +1,117 @@
+@import "imports";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cream;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 350px;
+    display: flex;
+    background-color: $soft-red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+.h-content-cont{
+    display: flex;
+    flex-direction: column;
+    color: $cream;
+    .h-content-title{
+        font-size: 0.9em;
+        padding-bottom: 5px;
+    }
+    .h-content-bal{
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+}
+
+.content{
+    display: block;
+    width: 350px;
+    padding: 6%;
+    background-color: $v-p-orange;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    .c-title{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: $dark-brown;
+        margin-bottom: 5%;
+    }
+    .c-chart{
+        justify-self: center;
+        align-self: center;
+    }
+    // .c-chart::after{
+    //     content: "";
+    //     display: block;
+    //     background-color: $medium-brown;
+    //     height: 1px;
+    //     margin-top: 5%;
+    // }
+    hr{
+        outline: none;
+        width: 95%;
+        align-self: center;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        border-top: solid 0.7px;
+        color: $medium-brown;
+    }
+}
+
+.c-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    .c-f-left, .c-f-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .c-f-l-title{
+        font-size: 0.8em;
+        color: $medium-brown;
+        margin-bottom: 3%;
+    }
+    .c-f-l-bal{
+        color: $dark-brown;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .c-f-right{
+        align-self: flex-end;
+        margin-bottom: 2%;
+        font-size: 0.9em;
+    }
+    .c-f-r-percent{
+        align-self: flex-end;
+        font-weight: 700;
+        font-size: 1.1em;
+        color: $dark-brown;
+    }
+    .c-f-r-title{
+        color: $medium-brown;
+    }
+
+}
